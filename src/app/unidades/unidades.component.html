@@ -1,0 +1,32 @@
+<div>
+<div class="ui-g" style="background: whitesmoke">
+    <div class="ui-g-3 ui-fluid">
+      <input type="text" pInputText>
+    </div>
+    <div class="ui-g-1 ui-fluid">
+        <input type="text" pInputText>
+    </div>
+    <div class="ui-g-2 ui-fluid">
+        <input type="text" pInputText>
+    </div>
+    <div class="ui-g-2 ui-fluid">
+        <p-calendar [(ngModel)]="rangeDates" selectionMode="range" [readonlyInput]="true"></p-calendar>
+    </div>
+    <div class="ui-g-4" style="text-align: right">
+        <p-button label="NOVA UNIDADE"></p-button>
+    </div>
+</div>
+<div style="text-align: right; padding: 10px">
+  1-30 de 100
+</div>
+<div class="ui-g">
+  <div class="ui-g-12">
+    <p-dataTable [value]="unidades">
+      <p-column field="nome" header="Nome"></p-column>
+    </p-dataTable>
+    tabela, dando erro de drop-down
+  </div>
+
+</div>
+</div>
+
